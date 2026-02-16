@@ -1,3 +1,8 @@
+:root {
+  --bg-color: #f6f6f6;
+  --primary-dark: rgb(4, 2, 32);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -5,7 +10,7 @@
 }
 
 body {
-  background-color: #f6f6f6;
+  background-color: var(--bg-color);
   padding: 20px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -13,6 +18,7 @@ body {
 .container {
   background-color: white;
   border-radius: 32px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
 }
 
 .inner-container {
@@ -38,7 +44,7 @@ nav {
 }
 
 .user-initials {
-  background-color: rgb(4, 2, 42);
+  background-color: var(--primary-dark);
   color: white;
   padding: 6px;
   border-radius: 8px;
@@ -51,11 +57,16 @@ hr {
 .btn-menu {
   background: none;
   border: none;
+  cursor: pointer;
   transition: transform 0.3 ease;
 }
 
 .btn-menu img {
   width: 36px;
+}
+
+.btn-menu:hover {
+  transform: scale(1.1);
 }
 
 .hero-section {
@@ -71,32 +82,51 @@ hr {
   border-radius: 50%;
   aspect-ratio: 1/1;
   object-fit: cover;
-  box-shadow: 0px 0px 16px rgb(224, 224, 224);
+  box-shadow: 0px 0px 24px rgb(212, 212, 212);
+}
+
+.user-title {
+  line-height: 1.4;
 }
 
 .user-description {
-  width: 65%;
+  width: 75%;
   color: rgb(105, 105, 105);
 }
 
+.user-links {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+}
+
 .user-links a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background-color: rgb(238, 242, 245);
+  border-radius: 50%;
   text-decoration: none;
+  transition: all 0.3s ease;
 }
 
 .user-links img {
-  width: 44px;
-  margin: 0 5px;
-  transition: transform 0.3 ease;
+  width: 65%;
 }
 
-.user-links img:hover, .btn-menu img:hover {
+.user-links a:hover {
   transform: translateY(-3px);
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
 }
 
 .btn-projects {
+  font-size: 1rem;
   border-radius: 8px;
   color: white;
-  background-color: rgb(4, 2, 42);
+  background-color: var(--primary-dark);
   border: none;
   padding: 12px 24px;
   cursor: pointer;
@@ -112,7 +142,7 @@ hr {
 footer {
   margin-top: 30px;
   width: 100%;
-  background-color: rgb(4, 2, 42);
+  background-color: var(--primary-dark);
   color: white;
   border-radius: 0px 0px 32px 32px;
   padding: 24px;
@@ -140,5 +170,5 @@ h4 {
 }
 
 .footer-desc {
-  width: 65%;
+  width: 75%;
 }
