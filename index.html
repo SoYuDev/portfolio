@@ -8,48 +8,83 @@
   </head>
 
   <body>
-    <header>
-      <nav>
-        <i>LR</i>
-        <p>Luis Rodríguez</p>
-        <button>BOTON HAMBURGUESA</button>
-        <!--? Botón -->
-      </nav>
-    </header>
+    <div class="container">
+      <div class="inner-container">
+        <header>
+          <nav>
+            <div class="nav-left">
+              <span class="user-initials">LR</span>
+              <p>Luis Rodríguez</p>
+            </div>
 
-    <main>
-      <section class="hero-section">
-        <img
-          src="./public/home-page/rodriguez-luis-hero-img.jpeg"
-          alt="Foto de Luis Rodríguez"
-        />
-        <p>Hola, soy Luis Rodríguez Desarrollador de software</p>
-        <p class="description">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae totam
-          ipsa, eveniet impedit illum laudantium labore dolor cupiditate. Modi
-          rerum laudantium pariatur unde ex aspernatur sunt in molestias quas
-          aliquid.
-        </p>
-        <div class="social-links">
-          <a href="https://github.com/SoYuDev" target="_blank"
-            ><i>GitHub Icon</i></a
-          >
+            <div class="nav-right">
+              <button class="btn-menu">
+                <img
+                  src="./public/icons/icons8-hamburger-menu-100.png"
+                  alt="Menu"
+                />
+              </button>
+            </div>
+          </nav>
+          <hr />
+        </header>
 
-          <a href="https://www.linkedin.com/in/luisrodriguez99/" target="_blank"
-            ><i>LinkedIn Icon</i></a
-          >
-        </div>
-        <button>Ver mis proyectos</button>
-      </section>
-    </main>
+        <main>
+          <section class="hero-section">
+            <img
+              src="./public/home-page/rodriguez-luis-hero-img.jpeg"
+              alt="Foto de Luis Rodríguez"
+              class="hero-img"
+            />
+            <div class="user-title">
+              <p>Hola, soy Luis Rodríguez</p>
+              <p>Desarrollador de software</p>
+            </div>
 
-    <footer>
-      <p><i>LR</i> Luis Rodríguez</p>
-      <h3>¿Tienes un proyecto en mente?</h3>
-      <p>
-        Estoy siempre interesado en nuevos proyectos y oportunidades.
-        ¡Conectemos y hablemos sobre tu próxima idea!
-      </p>
-    </footer>
+            <div class="user-description">
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae
+                totam ipsa, eveniet impedit illum laudantium labore dolor
+                cupiditate. Modi rerum laudantium pariatur unde ex aspernatur
+                sunt in molestias quas aliquid.
+              </p>
+            </div>
+
+            <div class="user-links">
+              <a href="https://github.com/SoYuDev" target="_blank">
+                <img
+                  src="./public/icons/icons8-github-100.png"
+                  alt="GitHub Icon"
+                />
+              </a>
+
+              <a
+                href="https://www.linkedin.com/in/luisrodriguez99/"
+                target="_blank"
+              >
+                <img
+                  src="./public/icons/icons8-linkedin-100.png"
+                  alt="LinkedIn Icon"
+                />
+              </a>
+            </div>
+            <button class="btn-projects">Ver mis proyectos</button>
+          </section>
+        </main>
+
+        <footer>
+          <div class="footer-content">
+            <p><span class="user-initials-footer">LR</span> Luis Rodríguez</p>
+            <h4>¿Tienes un proyecto en mente?</h4>
+            <div class="footer-desc">
+              <p>
+                Estoy siempre interesado en nuevos proyectos y oportunidades.
+                ¡Conectemos y hablemos sobre tu próxima idea!
+              </p>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
   </body>
 </html>

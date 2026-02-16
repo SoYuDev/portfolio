@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f6f6f6;
+  padding: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+  background-color: white;
+  border-radius: 32px;
+}
+
+.inner-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 10px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px;
+}
+
+.nav-left {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.user-initials {
+  background-color: rgb(4, 2, 42);
+  color: white;
+  padding: 6px;
+  border-radius: 8px;
+}
+
+hr {
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.btn-menu {
+  background: none;
+  border: none;
+  transition: transform 0.3 ease;
+}
+
+.btn-menu img {
+  width: 36px;
+}
+
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.hero-img {
+  width: 300px;
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  box-shadow: 0px 0px 16px rgb(224, 224, 224);
+}
+
+.user-description {
+  width: 65%;
+  color: rgb(105, 105, 105);
+}
+
+.user-links a {
+  text-decoration: none;
+}
+
+.user-links img {
+  width: 44px;
+  margin: 0 5px;
+  transition: transform 0.3 ease;
+}
+
+.user-links img:hover, .btn-menu img:hover {
+  transform: translateY(-3px);
+}
+
+.btn-projects {
+  border-radius: 8px;
+  color: white;
+  background-color: rgb(4, 2, 42);
+  border: none;
+  padding: 12px 24px;
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+.btn-projects:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+footer {
+  margin-top: 30px;
+  width: 100%;
+  background-color: rgb(4, 2, 42);
+  color: white;
+  border-radius: 0px 0px 32px 32px;
+  padding: 24px;
+}
+
+.footer-content {
+  margin: 24px 0 64px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+h4 {
+  font-weight: 600;
+}
+
+.user-initials-footer {
+  background-color: white;
+  color: black;
+  padding: 6px;
+  margin-right: 4px;
+  border-radius: 8px;
+}
+
+.footer-desc {
+  width: 65%;
+}
