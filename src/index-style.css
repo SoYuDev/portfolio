@@ -1,0 +1,81 @@
+.container-large {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.hero-img {
+  width: 300px;
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  box-shadow: 0px 0px 24px rgb(212, 212, 212);
+}
+
+.user-title {
+  line-height: 1.4;
+}
+
+.user-links {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-links a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background-color: rgb(238, 242, 245);
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.user-links img {
+  width: 65%;
+}
+
+.user-links a:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+}
+
+.btn-projects {
+  font-size: 1rem;
+  border-radius: 8px;
+  color: white;
+  background-color: var(--primary-dark);
+  border: none;
+  padding: 12px 24px;
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+.btn-projects:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/*** DESKTOP ***/
+@media (min-width: 1024px) {
+  body {
+    height: 100vh; /*? I don't know if this is a good idea */
+  }
+  .hero-section {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .container-large {
+    text-align: left;
+    align-items: flex-start;
+  }
+}
