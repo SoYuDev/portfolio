@@ -242,11 +242,19 @@ footer .footer-content .footer-desc {
   margin: 8px auto;
   flex-direction: column;
   max-width: 600px;
+  transition: all 0.3s ease;
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
+  text-decoration: none;
+  color: inherit;
 }
 .card:only-child {
   grid-column: 1/-1;
   max-width: 600px;
+}
+.card:hover {
+  transform: translateY(-3px);
+  text-decoration: none;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
 }
 @media (min-width: 768px) {
   .card {

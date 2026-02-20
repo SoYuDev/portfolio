@@ -35,13 +35,22 @@
   margin: 8px auto;
   flex-direction: column;
   max-width: 600px;
+  transition: all 0.3s ease;
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
+  text-decoration: none;
+  color: inherit;
 
   &:only-child {
     // Definimos que vaya desde la línea vertical número 1 hasta la última línea a la derecha -1
     // Ve desde 1 hasta -1
     grid-column: 1/-1;
     max-width: 600px;
+  }
+
+  &:hover {
+    transform: translateY(-3px);
+    text-decoration: none;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
   }
 
   @include for-tablet() {
