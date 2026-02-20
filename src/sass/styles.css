@@ -244,6 +244,10 @@ footer .footer-content .footer-desc {
   max-width: 600px;
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
 }
+.card:only-child {
+  grid-column: 1/-1;
+  max-width: 600px;
+}
 @media (min-width: 768px) {
   .card {
     max-width: none;

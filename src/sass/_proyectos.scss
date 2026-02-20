@@ -37,6 +37,13 @@
   max-width: 600px;
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
 
+  &:only-child {
+    // Definimos que vaya desde la línea vertical número 1 hasta la última línea a la derecha -1
+    // Ve desde 1 hasta -1
+    grid-column: 1/-1;
+    max-width: 600px;
+  }
+
   @include for-tablet() {
     max-width: none;
   }
