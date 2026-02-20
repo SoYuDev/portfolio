@@ -184,12 +184,12 @@ footer .footer-content .footer-desc {
   border-radius: 50%;
   transition: all 0.3s ease;
 }
-.container-large .user-links img {
-  width: 65%;
-}
-.container-large .user-links:hover {
+.container-large .user-links a:hover {
   transform: translateY(-3px);
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+}
+.container-large .user-links img {
+  width: 55%;
 }
 .container-large .btn-projects {
   font-size: 1rem;
